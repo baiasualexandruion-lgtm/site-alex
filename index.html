@@ -1,48 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educație pentru comunități maghiare</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222; }
-        header { background: #0073e6; padding: 20px; text-align: center; color: white; }
-        nav { background: #005bb5; display: flex; justify-content: center; }
-        nav a {
-            color: white; text-decoration: none;
-            padding: 14px 20px; display: inline-block;
-        }
-        nav a:hover { background: #003d80; }
-        section { padding: 40px; text-align: center; }
-        h1 { margin-top: 0; }
-        .btn {
-            display: inline-block; background: #0073e6;
-            color: white; padding: 12px 25px;
-            border-radius: 6px; text-decoration: none;
-            margin-top: 15px;
-        }
-        .btn:hover { background: #005bb5; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Educație RO pentru comunități maghiare</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f9fc;color:#111}
+    header{background:#0b5bd3;color:#fff;padding:20px 12px;text-align:center}
+    main{max-width:900px;margin:0 auto;padding:28px 16px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px 16px;box-shadow:0 2px 8px rgba(0,0,0,.05);margin:12px 0}
+    .btn{display:inline-block;background:#0b5bd3;color:#fff;text-decoration:none;padding:10px 16px;border-radius:8px}
+    .btn:focus,.btn:hover{background:#094aa9}
+    footer{padding:18px 12px;text-align:center;color:#555}
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Educație în limba română pentru vorbitori de maghiară</h1>
+  </header>
 
-<header>
-    <h1>Educație profesională pentru comunități maghiare</h1>
-</header>
+  <main>
+    <p>Bun venit! O pagină simplă, publicată prin GitHub Pages.</p>
 
-<nav>
-    <a href="index.html">Acasă</a>
-    <a href="despre.html">Despre noi</a>
-    <a href="cursuri.html">Cursuri</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <div class="card">
+      <h2>Ce oferim</h2>
+      <ul>
+        <li>Cursuri de română A1–B1, ritm prietenos</li>
+        <li>Sesiuni online sau la sediu</li>
+        <li>Raport de progres și diplomă de participare</li>
+      </ul>
+      <p><a class="btn" href="mailto:inscrieri@exemplu.ro?subject=Cerere%20oferta">Cere ofertă</a></p>
+    </div>
 
-<section>
-    <h2>Bine ai venit!</h2>
-    <p>Oferim cursuri de formare profesională și digitală în limba română, adaptate comunităților maghiare.</p>
-    <a class="btn" href="contact.html">Solicită ofertă</a>
-</section>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:inscrieri@exemplu.ro">inscrieri@exemplu.ro</a></p>
+      <p>Telefon: 07xx xxx xxx</p>
+    </div>
+  </main>
 
+  <footer>© <span id="y"></span> Educație RO → comunități maghiare</footer>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <!-- redeploy -->
 </body>
 </html>
